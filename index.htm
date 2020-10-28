@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+/>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>Bakery School</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg px-4 ">
+      <a  class="navbar-brand" href="#"><img id="svgLogo" src="img/bakery.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse " id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize ">
+          <li class="nav-item active ml-5">
+            <a class="nav-link" href="#home">home</a>
+          </li>
+          <li class="nav-item ml-5">
+            <a class="nav-link " href="#about">about</a>
+          </li>
+          <li class="nav-item ml-5">
+            <a class="nav-link" href="#store">store</a>
+          </li>
+          <li class="nav-item ml-5">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          <!-- end of single info -->
+          <!-- single info -->
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+            <p class="mb-0 text-capitalize"><span id="item-count">0 </span> items - €<span class="item-total">0.00</span></p>
+          </div>
+          <!-- end of single info -->
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav -->
+    <!-- banner  -->
+    <div class="container-fluid" id="home">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize" style="color: black;" >welcome to <strong class="banner-title ">Bakery School</strong></h1>
+          <a href="#store" class="btn banner-link text-uppercase my-2">explore</a>
+
+        </div>
+        <div id="cart" class="cart">
+          <!-- cart item -->
+
+          <!-- 
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <img src="img/z-cake-2.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
+            <div class="item-text">
+
+              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+              <span>€</span>
+              <span id="cart-item-price" class="cart-item-price" class="mb-0">10.99</span>
+            </div>
+            <a href="#" id='cart-item-remove' class="cart-item-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+          -->
+          <!--end of  cart item -->
+
+
+          <!-- cart item -->
+
+          <!--  
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <img src="img-cart/doughnut-2.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
+            <div class="cart-item-text">
+
+              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+              <span>€</span>
+              <span id="cart-item-price" class="cart-item-price" class="mb-0">10.99</span>
+            </div>
+            <a href="#" id='cart-item-remove' class="cart-item-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+          -->
+
+          <!-- cart total -->
+          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+            <h5>total</h5>
+            <h5> € <strong id="cart-total" class="font-weight-bold">0.00</strong> </h5>
+          </div>
+          <!--end cart total -->
+          <!-- cart buttons -->
+          <div class="cart-buttons-container mt-3 d-flex justify-content-between">
+            <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+            <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+          </div>
+          <!--end of  cart buttons -->
+          <!--  -->
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!--end of  banner  -->
+  </header>
+  <!-- header -->
+  <!-- about us -->
+  <section class="about py-5" id="about">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize"> <strong class="banner-title ">about </strong>us</h1>
+          <p class="my-4 text-muted w-75" style="font-size: 25px;">Our classic treats are made daily by in-house bakers, using the freshest & finest ingredients. Come visit us for delicious, sentimental sweets and a friendly, old-fashioned neighborhood experience.</p>
+          <a href="#store" class="btn btn-outline-secondary btn-black text-uppercase ">explore</a>
+
+        </div>
+        <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+          <div class="about-img__container">
+            <img src="https://images.pexels.com/photos/1070945/pexels-photo-1070945.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end of about us -->
+
+
+  <!-- store -->
+  <section id="store" class="store py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">our <strong class="banner-title ">store</strong></h1>
+        </div>
+      </div>
+      <!-- end of section title -->
+      <!--filter buttons -->
+      <div class="row">
+        <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> All</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cakes">cakes</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cupcakes">Cupcakes</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="sweets">Candies</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="doughnuts">Donuts</a>
+        </div>
+      </div>
+      <!-- search box -->
+      <div class="row">
+
+        <div class="col-10 mx-auto col-md-6">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend ">
+                <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder='item....' id="search-item">
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <!--end of filter buttons -->
+      <!-- store  items-->
+      <div class="row" class="store-items" id="store-items">
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card ">
+            <div class="img-container">
+              <img src="https://images.pexels.com/photos/1395049/pexels-photo-1395049.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                Add to Cart
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Cupcake</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="https://images.pexels.com/photos/1591481/pexels-photo-1591481.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                Add to Cart
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">cupcake</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="https://images.pexels.com/photos/960540/pexels-photo-960540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                Add to Cart
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">cake</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+          <div class="card ">
+            <div class="img-container">
+              <img src="https://images.pexels.com/photos/1785852/pexels-photo-1785852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                Add to Cart
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">donut</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card ">
+            <div class="img-container">
+              <img src="https://images.pexels.com/photos/4202998/pexels-photo-4202998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                Add to Cart
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Candy</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                Add to Cart
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">cupcake</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">7</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="https://images.pexels.com/photos/1291712/pexels-photo-1291712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                Add to Cart
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">cake</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">25</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+          <div class="card ">
+            <div class="img-container">
+              <img src="https://images.pexels.com/photos/230325/pexels-photo-230325.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                Add to Cart
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Cookie</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">3</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+          <div class="card ">
+            <div class="img-container">
+              <img src="https://images.pexels.com/photos/867464/pexels-photo-867464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                Add to Cart
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Chocolate</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">15</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="cupcakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="https://images.pexels.com/photos/1411948/pexels-photo-1411948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                Add to Cart
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">croissant & coffee</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">10</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="cakes">
+          <div class="card ">
+            <div class="img-container">
+              <img src="https://images.pexels.com/photos/4722021/pexels-photo-4722021.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                Add to Cart
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">cake</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="dougnuts">
+          <div class="card ">
+            <div class="img-container">
+              <img src="https://images.pexels.com/photos/4686960/pexels-photo-4686960.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                Add to Cart
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">donut</h5>
+                <h5 class="store-item-value">€ <strong id="store-item-price" class="font-weight-bold">25</strong></h5>
+
+              </div>
+            </div>
+
+
+          </div>
+          <!-- end of card-->
+        </div>
+        <!--end of single store item-->
+
+      </div>
+  </section>
+  <!--end of store items -->
+
+
+  <!-- modal-container -->
+  <div class="container-fluid ">
+    <div class="row lightbox-container align-items-center">
+      <div class="col-10 col-md-10 mx-auto text-right lightbox-holder">
+        <span class="lightbox-close"><i class="fas fa-window-close"></i></span>
+        <div class="lightbox-item"></div>
+        <span class="lightbox-control btnLeft"><i class="fas fa-caret-left"></i></span>
+        <span class="lightbox-control btnRight"><i class="fas fa-caret-right"></i></span>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+   <!-- Contact -->
+
+   <!-- Section: Contact v.1 -->
+<section class="my-5" id="contact">
+
+  <!-- Section heading -->
+  <h2 class="h1-responsive font-weight-bold text-center my-5"> <strong style="color: #c4385d;">Contact</strong> Us</h2>
+  <!-- Section description -->
+  <p style="font-size: 20px;" class="text-center w-responsive mx-auto pb-5">Complete this form and we will get back to you in 24 hours.</p>
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-lg-5 mb-lg-0 mb-4">
+
+      <!-- Form with header -->
+      <div class="card ml-3" id="contact_form">
+        <form method="POST" data-netlify="true">
+        <div class="card-body">
+          <!-- Header -->
+          <div class="form-header blue accent-1">
+            <h3 class="mt-2"><i class="fas fa-envelope"></i> Write to us:</h3>
+          </div>
+          <!-- Body -->
+          <div class="md-form">
+            <i class="fas fa-user prefix grey-text"></i>
+            <input name="name" placeholder="Name" type="text" id="form-name" class="form-control">
+            <label for="form-name">Your name</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-envelope prefix grey-text"></i>
+            <input name="e-mail" placeholder="E-mail" type="text" id="form-email" class="form-control">
+            <label  for="form-email">Your email</label>
+          </div>
+          <div class="md-form">
+            <i class="fas fa-pencil-alt prefix grey-text"></i>
+            <textarea name="message" placeholder="Your Message..." id="form-text" class="form-control md-textarea" rows="3"></textarea>
+            <label for="form-text">Send message</label>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-secondary" value="Send Message" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+      </div>
+      <!-- Form with header -->
+
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-7">
+
+      <!--Google map-->
+      <div id="map-container-section" class="z-depth-1-half map-container-section mb-4 mr-3" style="height: 400px">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9743.553575704316!2d4.888760789199617!3d52.3724436770985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609b884575367%3A0x3509f467a8d39c68!2sDe%20Wallen%2C%20Amsterdam%2C%20Hollanda!5e0!3m2!1str!2str!4v1603810147862!5m2!1str!2str" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>      </div>
+      <!-- Buttons-->
+      <div class="row text-center">
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1">
+            <i class="fas fa-map-marker-alt"></i>
+          </a>
+          <p>Nieuwezijds Voorburgwal 
+            148, 1022 RJ Amsterdam</p>
+          <p class="mb-md-0">Netherlands</p>
+        </div>
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1">
+            <i class="fas fa-phone"></i>
+          </a>
+          <p>+ 31 234 567 89</p>
+          <p class="mb-md-0">Mon - Sat, 8:00-22:00</p>
+        </div>
+        <div class="col-md-4">
+          <a class="btn-floating blue accent-1">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <p>bakeryschool@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- Grid column -->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Contact v.1 -->
+
+
+
+
+
+  <!-- Footer -->
+<footer class="page-footer font-small cyan darken-3"
+        style="background-color: #f1eded;">
+
+  <!-- Footer Elements -->
+  <div class="container" style="text-align: center;">
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-3">
+        <div class="mb-5 flex-center" id="social_media_icons">
+
+          <!-- Facebook -->
+          <a href="#" class="fb-ic">
+            <i style="color:#c4385d;" class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!-- Twitter -->
+          <a href="#" class="tw-ic">
+            <i style="color:#c4385d;" class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Linkedin -->
+          <a href="#" class="li-ic">
+            <i style="color:#c4385d;" class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Instagram-->
+          <a href="#" class="ins-ic">
+            <i style="color:#c4385d;" class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+          </a>
+          <!--Pinterest-->
+          <a href="#" class="pin-ic">
+            <i style="color:#c4385d;" class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+          </a>
+        </div>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row-->
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    Bakery School
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
