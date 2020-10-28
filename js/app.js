@@ -50,7 +50,7 @@
                     'text-capitalize', 'my-3')
                 cartItem.innerHTML =
                     `
-                    <img src="${item.img}" class="img-fluid rounded-circle mr-4 pr-2 pl-2" id="item-img" alt="">
+                    <img src="${item.img}" style="max-width:130px" class="img-fluid rounded-circle mr-4 " id="item-img" alt="">
                     <div class="item-text">
 
                     <p id="cart-item-title" class="font-weight-bold mb-0 mr-4">${item.name}</p>
@@ -108,7 +108,7 @@
                     'text-capitalize', 'my-3')
                 cartItem.innerHTML =
                     `
-                    <img src="${item.img}" class="img-fluid rounded-circle mr-4 pr-2 pl-2" id="item-img" alt="">
+                    <img src="${item.img}" style="max-width:130px" class="img-fluid rounded-circle mr-4" id="item-img" alt="">
                     <div class="item-text">
 
                     <p id="cart-item-title" class="font-weight-bold mb-0 mr-4">${item.name}</p>
