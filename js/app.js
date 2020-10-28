@@ -100,7 +100,7 @@
 
                 //console.log(item);
                 //console.log(finalPrice);
-                //console.log(price);
+                //console.log(price); 
                 //console.log(name);
 
                 const cartItem = document.createElement('div');
